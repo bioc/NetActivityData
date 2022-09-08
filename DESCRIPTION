@@ -1,0 +1,14 @@
+Package: deepGeneSetData
+Type: Package
+Title: Data required for getting the gene set scores with deepGeneSet package. 
+Version: 0.99.0
+Author: c(person("Carlos", "Ruiz-Arenas", , "carlos.ruiza@upf.edu", role = c("aut", "cre"))
+Maintainer: Carlos Ruiz-Arenas <carlos.ruiza@upf.edu>
+Description: This package contains the weights from pre-trained shallow sparsely-connected
+    autoencoders. This data is required for getting the gene set scores with deepGeneSet package. 
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: false
+Depends: 
+    R (>= 2.10)
+RoxygenNote: 7.2.1
