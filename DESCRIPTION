@@ -1,6 +1,6 @@
-Package: deepGeneSetData
+Package: NetActivityData
 Type: Package
-Title: Data required for getting the gene set scores with deepGeneSet package. 
+Title: Data required for getting the gene set scores with NetActivityData package. 
 Version: 0.99.0
 Author: c(person("Carlos", "Ruiz-Arenas", , "carlos.ruiza@upf.edu", role = c("aut", "cre"))
 Maintainer: Carlos Ruiz-Arenas <carlos.ruiza@upf.edu>
