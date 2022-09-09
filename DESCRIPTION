@@ -1,7 +1,7 @@
 Package: NetActivityData
 Type: Package
-Title: Data required for getting the gene set scores with NetActivityData package. 
-Version: 0.99.0
+Title: Data required for getting the gene set scores with NetActivityData package
+Version: 0.99.1
 Author: c(person("Carlos", "Ruiz-Arenas", , "carlos.ruiza@upf.edu", role = c("aut", "cre"))
 Maintainer: Carlos Ruiz-Arenas <carlos.ruiza@upf.edu>
 Description: This package contains the weights from pre-trained shallow sparsely-connected
