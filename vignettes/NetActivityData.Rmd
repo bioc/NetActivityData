@@ -1,0 +1,79 @@
+---
+title: "NetActivityData"
+author: 
+-   name: Carlos Ruiz Arenas
+    affiliation: Centro de Investigación Biomédica en Red de Enfermedades Raras (CIBERER), Barcelona, Spain
+    email: carlos.ruiza@upf.edu
+date: "`r Sys.Date()`"
+package: NetActivity
+output: 
+    BiocStyle::html_document:
+        toc_float: true
+vignette: >
+    %\VignetteIndexEntry{"NetActivityData"}
+    %\VignetteEngine{knitr::rmarkdown}
+    %\VignetteEncoding{UTF-8}
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Installation
+
+You can install the development version of NetActivity from [GitHub](https://github.com/) with:
+
+```{r, eval = FALSE}
+# install.packages("devtools")
+devtools::install_github("yocra3/NetActivity")
+```
+
+```{r}
+library(NetActivityData)
+```
+
+# Introduction
+
+This package contains pre-trained models for their use with `r Githubpkg("yocra3/NetActivity")`. The package currently contains two models based on GO Biological Processes and KEGG pathways. One model was trained using GTEx data (`gtex_gokegg`) and the other with TCGA data (`tcga_gokegg`). Each model contains two objects: the matrix weights and the gene set annotation. 
+
+# GTEx model 
+
+The GTEx model has the weights coded in `gtex_gokegg`, a matrix containing 1,518 gene sets and 8,758 genes (using ENSEMBL ids):
+
+```{r}
+data(gtex_gokegg)
+gtex_gokegg[1:5, c(1:4, 554)]
+```
+
+The annotation is encoded in the `gtex_gokegg_annot` object, a data.frame containing the gene set full names and the genes' weights:
+
+```{r}
+data(gtex_gokegg_annot)
+head(gtex_gokegg_annot)
+```
+
+
+# TCGA model 
+
+The TCGA model has the weights coded in `tcga_gokegg`, a matrix containing 1,518 gene sets and 8,758 genes (using ENSEMBL ids):
+
+```{r}
+data(tcga_gokegg)
+tcga_gokegg[1:5, c(1:4, 554)]
+```
+
+The annotation is encoded in the `tcga_gokegg_annot` object, a data.frame containing the gene set full names and the genes' weights:
+
+```{r}
+data(tcga_gokegg_annot)
+head(tcga_gokegg_annot)
+```
+
+The columns `Weights` and `Weights_SYMBOL` are lists, where each element is a named vector:
+
+```{r}
+tcga_gokegg_annot$Weights[[1]]
+tcga_gokegg_annot$Weights_SYMBOL[[1]]
+```
+
