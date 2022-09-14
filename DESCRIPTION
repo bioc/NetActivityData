@@ -1,7 +1,7 @@
 Package: NetActivityData
 Type: Package
 Title: Data required for getting the gene set scores with NetActivityData package
-Version: 0.99.3
+Version: 0.99.4
 Authors@R: c(person("Carlos", "Ruiz-Arenas", , "carlos.ruiza@upf.edu", role = c("aut", "cre")))
 Description: This package contains the weights from pre-trained shallow sparsely-connected
     autoencoders. This data is required for getting the gene set scores with NetActivity package. 
@@ -9,8 +9,10 @@ License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: false
 Depends: 
-    R (>= 2.10)
+    R (>= 4.1.0)
 RoxygenNote: 7.2.1
 Suggests: 
-    BiocStyle
+    BiocStyle,
+    knitr
 VignetteBuilder: knitr
+biocViews: ExperimentData, RepositoryData

@@ -77,3 +77,7 @@ tcga_gokegg_annot$Weights[[1]]
 tcga_gokegg_annot$Weights_SYMBOL[[1]]
 ```
 
+```{r}
+sessionInfo()
+```
+
