@@ -5,7 +5,7 @@ author:
     affiliation: Centro de Investigación Biomédica en Red de Enfermedades Raras (CIBERER), Barcelona, Spain
     email: carlos.ruiza@upf.edu
 date: "`r Sys.Date()`"
-package: NetActivity
+package: NetActivityData
 output: 
     BiocStyle::html_document:
         toc_float: true
@@ -26,7 +26,7 @@ You can install the development version of NetActivity from [GitHub](https://git
 
 ```{r, eval = FALSE}
 # install.packages("devtools")
-devtools::install_github("yocra3/NetActivity")
+devtools::install_github("yocra3/NetActivityData")
 ```
 
 ```{r}
