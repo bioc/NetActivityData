@@ -22,6 +22,15 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # Installation
 
+You can install the current release version of NetActivityData with:
+
+```{r, eval = FALSE}
+if (!require("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+
+BiocManager::install("NetActivityData")
+```
+
 You can install the development version of NetActivity from [GitHub](https://github.com/) with:
 
 ```{r, eval = FALSE}
