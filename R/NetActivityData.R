@@ -5,6 +5,6 @@
 #' NetActivity package.
 #
 #' @docType package
-#' @name NetActivity
+#' @name NetActivityData
 #'
 NULL
