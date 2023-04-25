@@ -1,7 +1,7 @@
 Package: NetActivityData
 Type: Package
 Title: Data required for getting the gene set scores with NetActivity package
-Version: 1.1.0
+Version: 1.2.0
 Authors@R: c(person("Carlos", "Ruiz-Arenas", , "carlos.ruiza@upf.edu", role = c("aut", "cre")))
 Description: This package contains the weights from pre-trained shallow sparsely-connected
     autoencoders. This data is required for getting the gene set scores with NetActivity package. 
